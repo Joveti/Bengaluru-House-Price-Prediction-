@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 
 model = pickle.load(open('model.pickle', 'rb'))
 params = pickle.load(open('params.pickle', 'rb'))
-locale.setlocale(locale.LC_ALL, 'en_US')
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 st.set_page_config(
     page_title='Bengaluru House Price Prediction', page_icon=':house:')
